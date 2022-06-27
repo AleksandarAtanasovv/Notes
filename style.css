@@ -49,3 +49,14 @@ body{
 .note .hidden{
     display: none;
 }
+.add{
+    background-color: #9ec862;
+    margin: 2rem auto;
+    border: 0;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 3px;
+}
