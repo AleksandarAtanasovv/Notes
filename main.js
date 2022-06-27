@@ -4,7 +4,7 @@ buttonAdd.addEventListener('click', () =>addNewNote());
 
 function addNewNote(){
     const note = document.createElement('div');
-    note.classList.add('note')
+    note.classList.add('notes')
     note.innerHTML = `<div class="note">
     <div class="tools">
         <button class="edit"><i class="fas fa-edit"></i>
@@ -30,6 +30,7 @@ textArea.addEventListener('input', (e) =>{
     const  { value }  = e.target;
 
     main.innerHTML = value
+    updateLS()
 })
 buttonDelete.addEventListener('click', () =>{
     note.remove();
@@ -37,6 +38,6 @@ buttonDelete.addEventListener('click', () =>{
 buttonEdit.addEventListener('click', () =>{
     main.classList.toggle('hidden')
     textArea.classList.toggle('hidden')
-    console.log(1);
 })
 };
+
